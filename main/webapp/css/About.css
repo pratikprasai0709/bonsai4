@@ -1,0 +1,77 @@
+@charset "UTF-8";
+*{
+    margin: 0;              /* Margin creates space outside the element or border seperating from other element*/
+    padding: 0;             /*Padding creates space inside the element between border and content*/
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('bg.png');
+    background-color: #f5f5dc;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center 110%;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Main{
+    margin-top: 8%;
+    color: black;
+}
+
+.Main h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.team{
+    display: flex;                  /*It is a single direction layout concep*/
+    text-align: center;
+    width: auto;
+    justify-content: center;
+    flex-wrap: wrap;                /*with the help of flex wrap we can enable wrapping for greater responsiveness*/
+  
+}
+
+.team .team_member{
+    background: white;
+    margin: 50px;
+    margin-bottom: 50px;
+    width: 300px;
+    padding: 20px;
+    line-height: 20px;
+    color: black;
+    position: relative;
+}
+
+.fa-linkedin{
+    font-size: 30px;
+    padding: 5%;                                    /*styling the font-awesome button*/
+}
+
+.fa-instagram{
+    font-size: 30px;
+    padding: 5%;
+}
+
+.team .team_member h3{
+    color: black;
+    font-size: 15px;
+    margin-top: 50px;
+}
+
+.team .team_member p.role{
+    color: rgb(218, 174, 17);
+    font-size: 15px;
+    text-transform: uppercase;
+    margin: 12px 0;
+}
+
+
+.team .team_member .teamimg img{
+    width: 150px;
+    height: 150px;
+}
